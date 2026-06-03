@@ -8,5 +8,13 @@ Read content in your terminal while simulating GoogleBot user agent.
 
 ## Usage
 
-`goggles URL [SELECTORS]`
+`goggles [-selector CSS] [-timeout DURATION] [-ua STRING] URL`
+
+Examples:
+
+```
+goggles https://example.com
+goggles -selector h1 https://example.com
+goggles -timeout 30s -selector "article p" https://news.ycombinator.com
+```
 
